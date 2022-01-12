@@ -1,7 +1,5 @@
 package projetgradle.model;
 
-import com.sun.istack.internal.NotNull;
-
 import java.io.InputStream;
 import java.util.Scanner;
 
@@ -14,7 +12,7 @@ public class Model implements IModel {
             Scanner s = new Scanner(test).useDelimiter("\\A");
             return s.hasNext() ? s.next() : "";
         }
-        
+
         return "Error";
     }
 }
